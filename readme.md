@@ -12,6 +12,7 @@ Project is created with:
 * Java
 * Spring Boot
 * maven
+* WireMock
 
 ### Setup
 To run this project run console and use listed commands:
