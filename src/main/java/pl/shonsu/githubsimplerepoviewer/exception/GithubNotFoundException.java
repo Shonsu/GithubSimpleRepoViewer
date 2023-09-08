@@ -1,4 +1,4 @@
-package pl.shonsu.githubsimplerepoviewer.config.exception;
+package pl.shonsu.githubsimplerepoviewer.exception;
 
 public class GithubNotFoundException extends RuntimeException{
 

@@ -1,13 +1,13 @@
-package pl.shonsu.githubsimplerepoviewer.config.service;
+package pl.shonsu.githubsimplerepoviewer.service;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import pl.shonsu.githubsimplerepoviewer.config.model.GithubRepository;
-import pl.shonsu.githubsimplerepoviewer.config.model.GithubSimpleRepository;
-import pl.shonsu.githubsimplerepoviewer.config.model.SimpleGithubUser;
+import pl.shonsu.githubsimplerepoviewer.model.GithubRepository;
+import pl.shonsu.githubsimplerepoviewer.model.GithubSimpleRepository;
+import pl.shonsu.githubsimplerepoviewer.model.SimpleGithubUser;
 
 import java.util.List;
 
@@ -17,8 +17,8 @@ import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class GithubServiceTest {
-    public static final boolean FORK = true;
-    public static final boolean NOT_FORK = false;
+    private static final boolean FORK = true;
+    private static final boolean NOT_FORK = false;
     @Mock
     private GithubClient githubClient;
 

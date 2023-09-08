@@ -1,4 +1,4 @@
-package pl.shonsu.githubsimplerepoviewer.config.exception;
+package pl.shonsu.githubsimplerepoviewer.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

@@ -1,4 +1,4 @@
-package pl.shonsu.githubsimplerepoviewer.config.controller;
+package pl.shonsu.githubsimplerepoviewer.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -16,8 +16,8 @@ import org.springframework.test.context.DynamicPropertySource;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
-import pl.shonsu.githubsimplerepoviewer.config.exception.ErrorMessage;
-import pl.shonsu.githubsimplerepoviewer.config.exception.GithubNotFoundException;
+import pl.shonsu.githubsimplerepoviewer.exception.ErrorMessage;
+import pl.shonsu.githubsimplerepoviewer.exception.GithubNotFoundException;
 
 import static com.github.tomakehurst.wiremock.client.WireMock.aResponse;
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -34,10 +34,10 @@ public class GithubViewerControllerTestIT {
     private ObjectMapper objectMapper;
 
     @RegisterExtension
-    static WireMockExtension wireMockServer = WireMockExtension.newInstance().build();
+    public static WireMockExtension wireMockServer = WireMockExtension.newInstance().build();
 
     @DynamicPropertySource
-    static void configurationProperties(DynamicPropertyRegistry registry) {
+    private static void configurationProperties(DynamicPropertyRegistry registry) {
         registry.add("github.api.base-url", wireMockServer::baseUrl);
     }
 

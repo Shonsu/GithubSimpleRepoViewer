@@ -1,4 +1,4 @@
-package pl.shonsu.githubsimplerepoviewer.config.model;
+package pl.shonsu.githubsimplerepoviewer.model;
 
 import java.util.List;
 

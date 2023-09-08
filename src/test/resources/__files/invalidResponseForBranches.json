@@ -1,0 +1,14 @@
+[
+  {
+    "name": "branch_1",
+    "commit": {
+      "sha": "last_sha_key_for_branch_1"
+    }
+  },
+  {
+    "name": null,
+    "commit": {
+      "sha": "last_sha_key_for_branch_2"
+    }
+  }
+]

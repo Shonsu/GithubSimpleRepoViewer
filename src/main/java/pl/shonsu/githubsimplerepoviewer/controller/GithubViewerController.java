@@ -1,14 +1,11 @@
-package pl.shonsu.githubsimplerepoviewer.config.controller;
+package pl.shonsu.githubsimplerepoviewer.controller;
 
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RestController;
-import pl.shonsu.githubsimplerepoviewer.config.exception.XmlNotAcceptableRepresentationException;
-import pl.shonsu.githubsimplerepoviewer.config.model.GithubSimpleRepository;
-import pl.shonsu.githubsimplerepoviewer.config.service.GithubService;
+import org.springframework.web.bind.annotation.*;
+import pl.shonsu.githubsimplerepoviewer.exception.XmlNotAcceptableRepresentationException;
+import pl.shonsu.githubsimplerepoviewer.model.GithubSimpleRepository;
+import pl.shonsu.githubsimplerepoviewer.service.GithubService;
 
 import java.util.List;
 

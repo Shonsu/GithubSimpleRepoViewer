@@ -1,9 +1,9 @@
-package pl.shonsu.githubsimplerepoviewer.config.service;
+package pl.shonsu.githubsimplerepoviewer.service;
 
 import org.springframework.stereotype.Service;
-import pl.shonsu.githubsimplerepoviewer.config.model.GithubRepository;
-import pl.shonsu.githubsimplerepoviewer.config.model.GithubSimpleRepository;
-import pl.shonsu.githubsimplerepoviewer.config.model.SimpleBranch;
+import pl.shonsu.githubsimplerepoviewer.model.GithubRepository;
+import pl.shonsu.githubsimplerepoviewer.model.GithubSimpleRepository;
+import pl.shonsu.githubsimplerepoviewer.model.SimpleBranch;
 
 import java.util.List;
 

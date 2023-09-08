@@ -1,4 +1,4 @@
-package pl.shonsu.githubsimplerepoviewer.config.controller;
+package pl.shonsu.githubsimplerepoviewer.controller;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -9,9 +9,9 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-import pl.shonsu.githubsimplerepoviewer.config.exception.ErrorMessage;
-import pl.shonsu.githubsimplerepoviewer.config.exception.XmlNotAcceptableRepresentationException;
-import pl.shonsu.githubsimplerepoviewer.config.service.GithubService;
+import pl.shonsu.githubsimplerepoviewer.exception.ErrorMessage;
+import pl.shonsu.githubsimplerepoviewer.exception.XmlNotAcceptableRepresentationException;
+import pl.shonsu.githubsimplerepoviewer.service.GithubService;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
